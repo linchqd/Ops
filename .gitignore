@@ -1,0 +1,7 @@
+.idea/
+*.pyc
+/.git/
+.DS_Store
+/venv/
+/config.py
+/logs/
