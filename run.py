@@ -3,10 +3,12 @@
 
 
 from app import app, api
+import resources
 from resources import logging, accounts
 from libs.auth import init_app
 from config import LISTEN_ADDRESS, LISTEN_PORT, DEBUG
 
+resources.add_resource(api)
 init_app(app)
 logging.add_resource(api)
 accounts.add_resource(api)
